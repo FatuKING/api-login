@@ -1,0 +1,5 @@
+### Recupera la password hash de la base de datos
+GET http://localhost:3000/user/login
+
+### Registra un nuevo users
+POST http://localhost:3000/user/register
