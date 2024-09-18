@@ -3,11 +3,11 @@ import bcrypt from 'bcrypt'
 import 'dotenv/config'
 
 const CONFIGDEFAULT = {
-  host: 'localhost',
-  port: 3306,
-  user: process.env.USER_LOCAL_DB,
-  password: process.env.PASS_LOCAL_DB,
-  database: 'db_login'
+  host: process.env.HOST_DB || 'localhost',
+  port: process.env.PORT_DB || 3306,
+  user: process.env.USER_DB || 'root',
+  password: process.env.PASS_DB || 'dvg4184',
+  database: process.env.NAME_DB || 'db_login'
 }
 
 const connectionString = process.env.DATABASE_URL ?? CONFIGDEFAULT
