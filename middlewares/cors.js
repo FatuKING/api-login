@@ -1,9 +1,8 @@
 import cors from 'cors'
 
 const ACCEPTED_ORIGINS = [
-  'http://06-login.netlify.app',
   'https://06-login.netlify.app',
-  'http://localhost:5173/'
+  'http://localhost:5173'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => cors({
