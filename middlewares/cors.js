@@ -2,7 +2,7 @@ import cors from 'cors'
 
 const ACCEPTED_ORIGINS = [
   'http://06-login.netlify.app',
-  'http://localhost:5173',
+  'https://06-login.netlify.app',
   'https://localhost:5173/'
 ]
 
