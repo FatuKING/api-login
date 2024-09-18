@@ -10,7 +10,7 @@ const CONFIGDEFAULT = {
   database: process.env.NAME_DB || 'db_login'
 }
 
-const connectionString = process.env.DATABASE_URL ?? CONFIGDEFAULT
+const connectionString = CONFIGDEFAULT
 
 const connection = await mysql.createConnection(connectionString)
 
